@@ -1,1 +1,1 @@
-export const getGreeting = () => cy.str;
+export const getGreeting = () => "Welcome";

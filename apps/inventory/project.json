@@ -5,5 +5,10 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project inventory --web",
-  "targets": {}
+  "targets": {
+    "deploy": {
+      "dependsOn": ["build"],
+      "command": "netlify deploy --dir=dist/apps/inventory --prod"
+    }
+  }
 }
