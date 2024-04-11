@@ -8,8 +8,8 @@ describe('App', () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
+  it('should have home page', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Welcome react-store/gi)).toBeTruthy();
+    expect(getByText(/Home/gi)).toBeTruthy();
   });
 });
